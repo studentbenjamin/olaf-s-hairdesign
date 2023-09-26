@@ -1,3 +1,18 @@
+.olaf{
+    font-family: 'Italianno', cursive;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.hairdesign{
+    font-family: 'Jaldi', sans-serif;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
 .box1{
     display: none;
     background-color: #ECECEC;
@@ -10,11 +25,18 @@
 .box2{
     background-color: #2E8B57;
     width: auto;
-    padding: 50px;
-    margin: auto;
+    padding: 15px;
     border-radius: 25px;
 }
 
+.gebruiker .wachtwoord{
+    width: 170px;
+    padding: 0px;
+    margin: auto;
+    height: auto;
+    
+
+}
 
 .open-button{
     background-color: #2E8B57;
@@ -33,6 +55,32 @@
 }
 
 .open-button:hover{background-color: #151414;}
+
+.login{
+    text-align: center;
+    padding: auto;
+}
+
+.login h1{
+    font-size: small;
+    padding: 5%;
+}
+
+.gebruiker{
+    text-align: center;
+}
+
+.wachtwoord{
+    text-align: center;
+
+}
+.inloggen{
+   margin-left: 43%;
+   margin-top: 30px;
+  
+}
+
+
 
 /*responsive*/
 
