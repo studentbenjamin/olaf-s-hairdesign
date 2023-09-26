@@ -1,0 +1,58 @@
+.box1{
+    display: none;
+    background-color: #ECECEC;
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.box2{
+    background-color: #2E8B57;
+    width: auto;
+    padding: 50px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+
+.open-button{
+    background-color: #2E8B57;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 150px;
+    border-radius: 25px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.open-button:hover{background-color: #151414;}
+
+/*responsive*/
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+     width: 100%;
+
+    }
+    .box1{
+        width: 100%;
+    }
+  }
