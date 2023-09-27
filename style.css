@@ -29,6 +29,14 @@
     border-radius: 25px;
 }
 
+.box3{
+    background-color: #ECECEC;
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    border-radius: 25px;
+}
+
 .gebruiker .wachtwoord{
     width: 170px;
     padding: 0px;
@@ -56,30 +64,36 @@
 
 .open-button:hover{background-color: #151414;}
 
-.login{
+.login, .perinfo{
     text-align: center;
     padding: auto;
 }
 
-.login h1{
+.login h1, .perinfo h1{
     font-size: small;
     padding: 5%;
 }
 
-.gebruiker{
+.gebruiker, .naam{
     text-align: center;
 }
 
-.wachtwoord{
+.wachtwoord, .telefoonnummer{
     text-align: center;
 
 }
-.inloggen{
-   margin-left: 43%;
-   margin-top: 30px;
+.inloggen, .volgende{
+    margin-left: 43%;
+    margin-top: 30px;
+    cursor: pointer;
   
 }
 
+select{
+    width: 38%;
+    margin-left: 31%;
+    text-align: center;
+}
 
 
 /*responsive*/
@@ -96,11 +110,8 @@
   }
 @media only screen and (max-width:500px) {
     /* For mobile phones: */
-    .menu, .main, .right {
+    .menu, .main, .right, .box1, .box3 {
      width: 100%;
 
-    }
-    .box1{
-        width: 100%;
     }
   }
