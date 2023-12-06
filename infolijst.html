@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="ShowInfo.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+</head>
+<header>
+  <div class="box2"><h1 class="olaf"> olaf</h1>
+    	<h1 class="hairdesign">Hairdesign</h1>
+      <button onclick="document.location='overigboeking.html'" id="arrow">&larr;</button>
+
+</header>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #c3c4c4;
+}
+.btn-logout {
+  text-align: right;
+}
+#Table 
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+</style>
+<body>
+  <p></p><button class="btn-logout">Uitloggen</button></p>
+    <!--de witte en de groene box-->
+    <table id="Table"></table>
+
+  <script>
+    $('.btn-logout').on('click', function(e){
+      if(confirm("Weet u zeker dat u zich wilt afmelden?")){
+          window.location.replace("http://localhost/boekingssysteem/index.html");
+          window.history.forward();
+      }    
+      return false;
+  });
+    </script>
+          
+        
+</body>
+</html>

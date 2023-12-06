@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="registratielogin.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+    <!--button om een afspraak te maken-->
+    <button class="open-button" onclick="openForm()">Afspraak</button>
+
+    <!--de witte en de groene box-->
+    <div class="box1" id="loginform">
+        <div class="box2"><h1 class="olaf"> olaf's</h1>
+        <h1 class="hairdesign">Hairdesign</h1>
+        </div>
+        <div class="login" method="POST">
+            <h1>Login</h1>
+            <input id="username" class="gebruiker" type="text" placeholder="Gebruikersnaam"><br>
+            <input id="password" class="wachtwoord" type="password" placeholder="Wachtwoord">
+        </div>
+        <button class="inloggen">Inloggen</button>
+    </div>
+                    
+<!-- het eerste stukje is zodat hij het forum opent -->
+    <script>
+        function openForm() {
+          document.getElementById("loginform").style.display = "block";
+        }
+
+        //en het tweede stukje kan er voor zorgen dat het forum weer sluit 
+        
+        //function closeForm() {
+          //document.getElementById("loginform").style.display = "none";
+        //}
+        
+        
+    </script>
+        
+</body>
+</html>

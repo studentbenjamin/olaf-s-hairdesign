@@ -1,8 +1,9 @@
 <?php
-	header("Access-Control-Allow-Origin: *");
+
+	header('Access-Control-Allow-Origin: *');
 	header('Access-Control-Allow-Methods: POST'); 
- 
-    require ("./dbconnect.php");
+
+    require ("dbconnect.php");
  	date_default_timezone_set('Europe/Amsterdam');
 
 if (isset($_POST['GetData']))

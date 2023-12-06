@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--de witte en de groene box-->
+    <div class="box3">
+        <div class="box2">
+            <h1 class="olaf"> olaf</h1>
+            <h1 class="hairdesign">Hairdesign</h1>
+        </div>
+        <div class="arrow-container">
+            <button onclick="document.location='infolijst.html'" id="arrow2">&#9776;</button>
+        </div>
+        <div class="perinfo">
+            <h1>Persoonlijke informatie</h1>
+            <input class="naam" type="text" id="fname" name="fname" placeholder="Naam"><br>
+            <input class="telefoonnummer" type="text" id="lname" name="lname" placeholder="Telefoonnummer">
+        </div>
+        <div class="gender">
+            <select class="selectgender">
+                <option value="" disabled selected>Knip optie</option>
+                <option value="man_knippen">Knippen Man</option>
+                <option value="vrouw_knippen">Knippen Vrouw</option>
+                <option value="vrouw_verven">Knippen en verven Vrouw</option>
+                <option value="man_verven">Knippen en verven Man</option>
+                <option value="kind">Kind</option>
+                <option value="baard_trimmen">Baard trimmen</option>
+            </select>
+        </div>
+        <button class="volgende">Volgende</button>
+    </div>
+
+    <script>
+        $('.volgende').click(function(event)
+    {
+      sessionStorage.setItem("Name", $(".naam").val());
+      sessionStorage.setItem("Phone", $(".telefoonnummer").val());
+        sessionStorage.setItem("Gender", $(".selectgender").val());
+
+        window.location.href='overigboeking.html';
+   });
+    </script>
+    
+</body>
+</html>

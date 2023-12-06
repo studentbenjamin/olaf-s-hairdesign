@@ -1,32 +1,39 @@
 $(document).ready(function () {
+    $('.inloggen').click(function(event)
+    {
 
     var obj = {
-        Username : $("#gebruiker").val(),
-        Password : $("#wachtwoord").val()
-    
+        Username : $("#username").val(),
+        Password : $("#password").val()
     }
     
     var json = JSON.stringify(obj);
+    console.log(json);
 
     $.ajax({
         type: "POST",
-        url: "loginregistratie.php",
+        url: "registratieLogin.php",
         // AddString => script Func
         data: { GetData: json },
         cache: false,
         crossDomain: true,
         success: function (msg) 
         {
+         console.log(msg);
            if(msg == "1")
            {
-              sessionStorage.setItem("Username", $("#gebruiker").val());
-              //window.location.href='pagina van afspraken maken';
-           }
+              //sessionStorage.setItem("Username", $("#gebruiker").val());
+              window.location.href='boekingssysteem.html';
+            }
            else
            {
               alert("Uw gebruikersnaam of wachtwoord is fout.");
            }
         }
      });
-   event.preventDefault();
+     $('.volgende').click(function(event)
+    {
+      alert("seks met jonathans zusje vind ik lekker");
+    });
+   });
   });

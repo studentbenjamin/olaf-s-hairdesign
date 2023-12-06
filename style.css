@@ -90,6 +90,21 @@
   
 }
 
+.arrow-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Optional: Add some styling to the buttons */
+  .arrow-container button {
+    color: black;
+    background-color: #ECECEC;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+
 .opslaan{
     margin-left: 43%;
     margin-top: 15px;
@@ -138,3 +153,11 @@ select{
 
     }
   }
+
+  #arrow{
+    font-size: 20px;
+  }
+
+#arrow2{
+    font-size: 20px;
+}
